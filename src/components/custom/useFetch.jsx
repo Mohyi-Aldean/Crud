@@ -20,9 +20,9 @@ function useFetch(path) {
 
   useEffect(() => {
     getUsers();
-  });
+  },[]);
 
-  return { data,error,isLoading }
+  return { data,error,isLoading,setData }
 }
 
 export default useFetch;
